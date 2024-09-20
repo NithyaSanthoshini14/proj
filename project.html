@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body,html{
+            margin: 0;
+            padding:0;
+            /* box-sizing: border-box; */
+            overflow-x: hidden;
+          }
+        
+        header{
+            background-color:#4dc3c7;
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            font-size:18px;
+        }
+        nav{
+            float:right;
+            gap:20px;
+            display: flex;
+            gap:80px;
+           margin-top:10px;
+           margin-right:70px;
+        }
+        .logo{
+            position: relative;
+            right:20px;
+        }
+        .sec1{
+            background: url(./banner-02.jpg);
+            height:700px;
+        }
+        .btn{
+            outline: 5px;
+            outline-color:#4dc3c7;
+            border-radius:20px;
+            position: relative;
+            left:90px;
+            padding: 10px;
+            width:120px;
+            height:40px;
+            background-color: transparent;
+            color: #4dc3c7;
+            font-weight: 500;
+        }
+        .d4{
+            margin-left: 30px;
+        }
+        .img{
+            position:relative;
+        }
+        .d1{
+            position:absolute;
+            color: white;
+           bottom:350px;
+           right:39%;
+           line-height:8px;
+        }
+        img{
+            object-fit:contain;
+        }
+        .container1{
+            height:90px;
+            width:90%;
+            background-color: white;
+            border-radius: 50px;
+            position: relative;
+            top:450px;
+            left:100px;
+        }
+        .pop,.global,.house{
+            display: flex;
+            position: relative;
+            left:30px;
+            gap: 15px;
+        }
+        .d2{
+            display:flex;
+            justify-content: space-evenly;
+            align-items:start;
+            padding-top:6px;
+            position: relative;
+            right:150px;
+        }
+        .btn1{
+            border:3px solid #4dc3c7; 
+            background-color:#4dc3c7 ;
+            border-radius: 20px;
+            color: white;
+            padding: 10px;
+            width:120px;
+            height:40px;
+            transform: translateX(230px);
+            margin-top: 20px;
+            
+        }
+        b{
+            color:#4dc3c7;
+        }
+        .hr{
+            display: flex;
+             padding-bottom: 50px; 
+             position: relative;
+            top:480px;
+            justify-content: space-between;
+        }
+        .p1{
+            display: inline-block;
+            display:flex;
+            justify-content: space-around;
+            color: aliceblue;
+            position: relative;
+            top:430px;
+        }
+        .sec2{
+            margin-left:30px;
+        }
+        .btn2{
+            width:100px;
+            height:40px;
+            border-radius: 50px;
+            background-color:#4dc3c7 ;
+            margin-top: 20px;
+            position: relative;
+            left:190px;
+        }
+        .swit{
+            display:flex;
+            column-gap: 200px;
+            
+        }
+        .dir{
+            display:flex;
+            color:#4dc3c7;
+        }
+        span{
+            margin-right: 10px;
+        }
+        .count1{
+            display:flex;
+        }
+        .btn3{
+             width:100px;
+            height:40px;
+            border-radius: 50px;
+            background-color:#4dc3c7 ;
+            margin-top: 20px;
+            position: relative;
+            left:210px;
+        }
+        .btn4{
+            width:100px;
+            height:40px;
+            border-radius: 50px;
+            background-color:#4dc3c7 ;
+            margin-top: 20px;
+            position: relative;
+            left:250px;
+        }
+        .btn5{
+            width:150px;
+            height:40px;
+            border-radius: 50px;
+            background-color:transparent ;
+            color: azure;
+            position: relative;
+            left:80%;
+            bottom:280px;
+            border-color:white ;
+        }
+        .foot{
+            width:100vw;
+            height:60px;
+            background-color: #4dc3c7;
+            position: relative;
+            bottom:185px;
+        }
+        .p4{
+            position:relative;
+            left:150px;
+        }
+        .div1 img{
+            border-radius: 50px;
+            position: relative;
+            left:10px;
+        }
+        .net{
+            margin-left: 20px;
+        }
+        .c1{
+            margin-left: 50px;
+        }
+        .c{
+            margin-left:65px ;
+        }
+        .c2{
+            margin-left: 65px;
+        }
+        .div2 img{
+            border-radius: 50px;
+            position: relative;
+            left:30px;
+
+        }
+        .div3 img{
+            border-radius: 50px;
+            position: relative;
+            left:30px;
+        }
+        @media screen and (min-width:730px) and (max-width:1024px){
+        nav{
+            float: right;
+            gap: 20px;
+            display: flex;
+            gap: 49px;
+            margin-top: 10px;
+            margin-right: 39px;
+        }
+        .container{
+            width:100%
+        }
+        .d1{
+            position: absolute;
+            color: white;
+            bottom: 399px;
+            right: 31%;
+            line-height: 8px;
+        }
+        .container1{
+            height: 90px;
+            width: 79%;
+            background-color: white;
+            border-radius: 50px;
+            position: relative;
+            bottom: 80px;
+            left: 103px;
+        }
+        .d2{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            padding-top: 8px;
+            position: relative;
+            right: 58px;
+        }
+        .pop img{
+            width:40px;
+            height:50px;
+            
+        }
+        .global img{
+            width:40px;
+            height:50px;
+
+        }
+        .house img{
+            width:40px;
+            height:50px;
+        }
+        .btn1{
+            padding: 10px;
+            transform: translateX(50px);
+            margin-top: 10px;
+    
+        }
+        .d2{
+            padding-top:13px;
+        }
+        .div2 img{
+            left:17px;
+            height:150px;
+            width:150px;
+            border-radius: 20px;
+        }
+        .swit{
+            column-gap: 35px;
+            /* position: relative;
+            bottom: 12px;
+            margin-left: -28px; */
+        }
+        .c{
+            margin-left: 39px;
+            margin-top: -18px;
+        }
+        .x1{
+        margin-top: -23px;
+        }
+        .x1 p{
+            width:80%;
+        }
+        .x2{
+            margin-left: -72px;
+        }
+        .x3{
+            margin-left: -54px;
+        }
+        .c hr{
+            width:80%;
+            margin-left:-10px;
+        }
+        .div1 img{
+            left:-3px;
+            height:150px;
+            width:150px;
+            border-radius: 20px;
+            margin-left: 19px;
+        }
+        .c1{
+            margin-left: 21px;
+            margin-top: -8px;
+        }
+        .btn3{
+            margin-top: 13px;
+            position: relative;
+            left: 212px;
+        }
+        .y1{
+        margin-top: -23px;
+        }
+        .y2{
+            margin-left: -72px;
+        }
+        .y3{
+            margin-left: -54px;
+        }
+        .div3 img{
+            left:17px;
+            height:150px;
+            width:150px;
+            border-radius: 20px;
+        }
+        .btn4{
+            position: relative;
+            left: 243px;
+            margin-top: 13px;
+        }
+        .c2{
+            margin-left: 42px;
+            margin-top: -8px;
+        }
+        .z1{
+            margin-top: -23px;
+
+        }
+        .z2{
+            margin-left: -72px;
+        }
+        .z3{
+            margin-left: -54px;
+        }
+        .frame{
+            width:15%;
+            height:30%;
+            position: relative;
+            right:10%;
+            bottom:530px;
+        }
+        .pos{
+            position: relative;
+            left: 10%;
+        }
+        .btn5{
+            position: relative;
+            left: 80%;
+        }
+        .p4 {
+            position: relative;
+            left:5%;
+        }
+
+    }
+    @media screen and (min-width:500px) and (max-width:729px){
+        nav{
+            gap: 28px;
+           margin-right: -6%;
+        }
+        .d1{
+            bottom: 395px;
+            right: 24%;
+            line-height: 13px;
+        }
+        .container1{
+            position: relative;
+            bottom: 82px;
+            left: 84px;
+            width:78%;
+        }
+        .d2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            padding-top: 19px;
+            position: relative;
+            right: 36px;
+            margin:5px;
+        }
+        .pop img{
+            width:25px;
+            height:35px;
+            
+        }
+        .global img{
+            width:25px;
+            height:35px;
+
+        }
+        .house img{
+            width:25px;
+            height:35px;
+        }
+        .pop p{
+            font-size: 13px;
+        }
+        .global p{
+            font-size: 13px;
+        }
+        .house p{
+            font-size: 13px;
+        }
+        .btn1 {
+            border-radius: 20px;
+            padding: 2px;
+            width: 108px;
+            height: 36px;
+            transform: translateX(50px);
+            margin-top: 8px;
+        }
+        .div2 img{
+            left:17px;
+            height:100px;
+            width:100px;
+            border-radius: 20px;
+        }
+
+    }
+</style>
+</head>
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="./logo.png">
+         <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Deals</a>
+            <a href="">Reservation</a>
+            <a href="">Book yours</a>
+        </nav>
+    </div>
+</header>
+<div class="content">
+<section class="sec1">
+<div class="container">
+    <!-- <img src="./banner-02.jpg" height="600px" width="50px" > -->
+    <div class="d1">
+        <p style="font-size:17px;">Take a Glimpse into the beautiful country of:</p>
+        <h1 style="font-size:40px; position: relative; left:50px;">Switzerland</h1>
+        <button class="btn">Go their</button>
+    </div>
+    <div class="container1">
+        <div class="d2">
+        <div class="pop">
+            <img src="./User.png" height="60px" width="50px">
+            <p>Population<br><b>8.66M</b></p>
+        </div>
+        <div class="global">
+            <img src="./global.png" height="60px" width="50px">
+            <p>Territory<br><b>41.290KM2</b></p>
+        </div>
+        <div class="house">
+            <img src="./house-solid.svg" height="60px" width="50px">
+            <p>AVG price<br><b>$1.100.200</b></p>
+        </div>
+        <div><button class="btn1">Explore more </button></div>
+        </div>
+</div>
+</div>
+<div class="hr">
+    <hr style="width:10%" color="white">
+    <hr style="width:10%" color="white">
+    <hr style="width:10%" color="white">
+    <hr style="width:10%" color="white">
+</div>
+<div class="p1">
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+</div>
+</section>
+<section class="sec2">
+    <div class="d4">
+        <h2>Visit one of our countries Now</h2>
+        <p style="opacity:0.6;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Sint repellendus sapiente </p>
+    </div>
+<div class="count1">
+    <div class="div2">
+        <img src="./country-01.jpg" height="200px" width="200px">
+    </div>
+<div class="c">
+    <div class="swit">
+        <h3>SWITZERLAND<br><div style="opacity: 0.4; font-size:15px;">Europe</div></h3>
+        <button class=btn2>Explore now</button>
+    </div>
+        <div class="x1">
+        <p style="opacity:0.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius quam iste doloremque nisi,<br>ipsa ex modi quas ipsum dolor sit ipsum dolor sit amet.</p>
+    <div>
+    <hr>
+    <div class="opac">
+    <div style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg>
+      8.66 Mil people</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="x2" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+      </svg>
+      41.290km2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="x3" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+      $1.100.200</div>
+      </div>
+      <hr>
+      </div>
+      <div class="dir">
+      <span>Need Directions?</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+      </svg>
+      </div>
+      </div>
+</div>
+</div>
+<div class="count1">
+    <div class="div1">
+        <img src="./layout2.jpeg" height="200px" width="200px" style="margin-left:20px ;">
+    </div>
+<div class="c1">
+    <div class="swit">
+        <h3>CARIBBEAN<br><div style="opacity: 0.4; font-size:15px;">North America</div></h3>
+        <button class=btn3>Explore now</button>
+    </div>
+        <div class="y1">
+        <p style="opacity:0.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius quam<br>ipsa ex modi quas ipsum dolor sit ipsum dolor sit amet.</p>
+        <div>
+    <hr>
+    <div class="opac1">
+    <div style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg>
+      44.48 Mil people</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="y2" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+      </svg>
+      275.400 km2 </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="y3" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+      $946.00</div>
+      </div>
+      <hr>
+      </div>
+      <div class="dir">
+      <span>Need Directions?</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+      </svg>
+      </div>
+      </div>
+     </div>
+</div>
+<div class="count1">
+    <div class="div3">
+        <img src="./country-03.jpg" height="200px" width="200px">
+    </div>
+<div class="c2">
+    <div class="swit">
+        <h3>FRANCE<br><div style="opacity: 0.4; font-size:15px;">Europe</div></h3>
+        <button class=btn4>Explore now</button>
+    </div>
+        <div class="z1">
+        <p style="opacity:0.6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius.<br>ipsa ex modi quas ipsum dolor sit ipsum dolor.</p>
+    
+        <div>
+    <hr>
+<div class="opac2">
+    <div style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+      </svg>
+      67.41 Mil people</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="z2" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/>
+      </svg>
+      551.500 km2</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="z3" style="opacity:0.6;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+      </svg>
+      $425.400</div>
+      </div>
+      <hr>
+      </div>
+      <div class="dir">
+      <span>Need Directions?</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+      </svg>
+      </div>
+      </div>
+      </div>
+</div>
+<div class="frame">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28703.04448448497!2d-80.14561680409557!3d25.93914628593493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2sSunny%20Isles%20Beach%2C%20FL%2033160%2C%20USA!5e0!3m2!1sen!2sin!4v1725690329855!5m2!1sen!2sin" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="pos">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16" style="position:relative; top:15px; color:#4dc3c7;">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+      </svg>
+<div class="circle"><h4>1</h4></div>
+<div class="circle" style="background-color:#4dc3c7;"><h4>2</h4></div>
+<div class="circle"><h4>3</h4></div>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="position:relative; top:15px; color:#4dc3c7;">
+    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+  </svg>
+</div>
+</section>
+</div>
+  <footer >
+    <div class="i1">
+    </div>
+    <div class="font">
+    <h1 style="color: aliceblue; font-size:30px;">ARE YOU LOOKING TO TRAVEL?</h1> 
+    <p style="color:aliceblue; font-size: 20px;">Make a reservation by clicking the Button</p>
+    </div>
+    <button class="btn5">Book yours now</button>
+    <div class="foot">
+    <p  class="p4" style="color:white; text-align:center;">copyright 2036 woOX Travel company All roghts Reserved.<br>Design:TemplateMo</p>
+    </div>
+</footer>
+</body>
+</html>

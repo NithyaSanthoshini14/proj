@@ -1,0 +1,59 @@
+.opac,.opac1,.opac2{
+    display: flex;
+}
+.frame{
+    position: relative;
+    float:right;
+    bottom:600px;
+    margin-right: 60px;
+    height: 900px;
+    border-radius: 30px;
+}
+.circle{
+    border: 2px solid #4ccacf;
+    border-radius: 30px;
+    height: 40px;
+    width:40px;
+    display: flex;
+    gap:20px;
+}
+.pos{
+    display:flex;
+    gap:20px;
+    position: relative;
+    left:250px;
+    margin-top: 50px;
+}
+h4{
+    position:relative;
+    left:16px;
+    bottom:10px;
+}
+
+.i1{
+    
+    background-image: url(./banner-01.jpg);
+
+    filter: invert(20%) sepia(50%) saturate(1300%) hue-rotate(145deg) brightness(80%) contrast(70%) opacity(0.7);
+      height: 250px;
+     width:100vw;
+      background-position: center;
+     background-size: cover;
+     fill-opacity: inherit;
+     
+     margin-top:40px;
+    }
+    .font{
+        position:relative;
+        bottom:180px;
+        left:30px;
+    } 
+    
+     
+    
+        
+        
+        
+        
+     
+     
